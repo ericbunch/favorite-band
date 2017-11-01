@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My favorite band</title>
+</head>
+
+<body ng-app="bandApp">
+    <div ng-controller="MainCtrl">
+        <h3>Names of The Rolling Stones</h3>
+        <ul>
+            <li ng-repeat="stone in stones">{{stone}}</li>
+        </ul>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <script src="main.controller.js"></script>
+</body>
+
+</html>
